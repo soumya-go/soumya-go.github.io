@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -11,83 +12,100 @@
 body{
     margin:0;
     font-family:Arial, sans-serif;
-    background:#020b25;
+    background:#0f172a;
+    color:#f8fafc;
+    line-height:1.6;
+}
+
+nav{
+    background:#111827;
+    padding:18px;
+    text-align:center;
+    border-bottom:3px solid #38bdf8;
+    position:sticky;
+    top:0;
+}
+
+nav a{
     color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
 }
 
 header{
-    background:linear-gradient(135deg,#08142c,#1a2f66);
-    padding:50px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    padding:60px 40px;
 }
 
 .hero{
     display:flex;
     align-items:center;
-    gap:40px;
+    gap:50px;
     max-width:1100px;
     margin:auto;
     flex-wrap:wrap;
 }
 
 .hero img{
-    width:220px;
-    border-radius:15px;
-    border:4px solid white;
+    width:260px;
+    border-radius:20px;
+    border:4px solid #38bdf8;
+    box-shadow:0px 0px 20px rgba(56,189,248,0.4);
 }
 
 .hero-text h1{
-    font-size:48px;
+    font-size:64px;
     margin-bottom:10px;
+    color:white;
 }
 
 .hero-text p{
-    font-size:20px;
+    font-size:24px;
 }
 
 section{
     max-width:1100px;
     margin:auto;
-    padding:40px 20px;
+    padding:50px 20px;
 }
 
 .card{
-    background:#162447;
-    padding:25px;
-    border-radius:12px;
-    margin-bottom:25px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.25);
 }
 
 h2{
-    color:#7dd3fc;
+    color:#38bdf8;
+    font-size:34px;
+}
+
+ul{
+    font-size:20px;
 }
 
 footer{
     text-align:center;
-    padding:25px;
-    background:#08142c;
+    padding:30px;
+    background:#111827;
+    border-top:2px solid #38bdf8;
+    color:#cbd5e1;
 }
 
-    nav{
-    background:#08142c;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#7dd3fc;
-}
 </style>
 
 </head>
 
 <body>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="publications.html">Publications</a>
@@ -95,6 +113,7 @@ nav a:hover{
 <a href="#">Talks</a>
 <a href="#">Contact</a>
 </nav>
+
 <header>
 
 <div class="hero">
@@ -128,9 +147,8 @@ Open University Israel
 
 <p>
 Hi, I am a theoretical astrophysicist working on exoplanetary atmospheres,
-radiative transfer, atmospheric chemistry and planetary evolution.
-My research focuses on Hot Jupiters, atmospheric dynamics,
-planetary chemistry and numerical simulations.
+radiative transfer, atmospheric chemistry, planetary evolution and numerical simulations.
+My research focuses on Hot Jupiters, atmospheric dynamics, chemistry and radiative processes.
 </p>
 
 </div>
@@ -156,8 +174,7 @@ planetary chemistry and numerical simulations.
 <h2>Current Research</h2>
 
 <p>
-Studying Chemical Analysis of Hot-Jupiter Atmospheres
-at Open University Israel.
+Studying Chemical Analysis of Hot-Jupiter Atmospheres at Open University Israel.
 </p>
 
 </div>
