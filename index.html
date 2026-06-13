@@ -43,38 +43,6 @@ body{
     100%{opacity:0.2;}
 }
 
-.planet{
-    position:absolute;
-
-    top:80px;
-    right:40px;
-
-    width:320px;
-    height:320px;
-
-    border-radius:50%;
-
-    background:
-    radial-gradient(circle at 30% 30%,
-    #ffd166 0%,
-    #ff9f1c 20%,
-    #e85d04 45%,
-    #9d0208 80%,
-    #370617 100%);
-
-    box-shadow:
-    0 0 60px rgba(255,120,0,0.7),
-    0 0 120px rgba(255,120,0,0.4),
-    0 0 180px rgba(255,120,0,0.2);
-
-    animation:rotatePlanet 40s linear infinite;
-}
-
-@keyframes rotatePlanet{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
-}
-
 /* ===========================
    Navigation
    =========================== */
@@ -120,7 +88,14 @@ header{
     flex-wrap:wrap;
 }
 
-.hero img{
+.hero-images{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.profile-photo{
     width:260px;
     border-radius:20px;
     border:4px solid #38bdf8;
@@ -128,6 +103,23 @@ header{
     box-shadow:
     0 0 20px rgba(56,189,248,0.5),
     0 0 40px rgba(56,189,248,0.2);
+}
+
+.exoplanet-photo{
+    width:320px;
+    border-radius:20px;
+
+    border:2px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 0 30px rgba(255,180,50,0.5),
+    0 0 80px rgba(255,120,0,0.25);
+
+    transition:0.4s;
+}
+
+.exoplanet-photo:hover{
+    transform:scale(1.04);
 }
 
 .hero-text h1{
@@ -218,7 +210,6 @@ footer{
 
 <div class="space-background">
 
-<div class="planet"></div>
 
 <div class="star" style="top:10%;left:20%;width:3px;height:3px;"></div>
 <div class="star" style="top:15%;left:70%;width:4px;height:4px;"></div>
@@ -251,12 +242,25 @@ footer{
 
 <div class="hero">
 
-<img src="Soumya_image-2.png" alt="Dr. Soumya Sengupta">
+<div class="hero-images">
+
+<img class="profile-photo"
+src="Soumya_image-2.png"
+alt="Dr. Soumya Sengupta">
+
+<img class="exoplanet-photo"
+src="PIA20687.jpg"
+alt="Hot Jupiter">
+
+</div>
 
 <div class="hero-text">
 
 <h1>Dr. Soumya Sengupta</h1>
 
+<p style="color:#38bdf8;font-size:20px;font-weight:bold;">
+Exoplanet Atmospheres • Radiative Transfer • Hot Jupiter Chemistry
+</p>
 <p>
 Theoretical Astrophysics | Exoplanets | Radiative Transfer
 </p>
