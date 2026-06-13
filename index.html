@@ -6,6 +6,93 @@
 
 <title>Dr. Soumya Sengupta</title>
 
+/* ==================================
+   Exoplanet System Animation
+   ================================== */
+
+.host-star{
+    position:absolute;
+
+    top:120px;
+    right:150px;
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    #fff7cc 0%,
+    #ffd166 40%,
+    #ff9f1c 100%);
+
+    box-shadow:
+    0 0 40px #ffd166,
+    0 0 80px #ff9f1c,
+    0 0 150px rgba(255,180,0,0.5);
+
+    opacity:0.45;
+}
+
+.orbit-ring{
+    position:absolute;
+
+    top:20px;
+    right:50px;
+
+    width:340px;
+    height:340px;
+
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:50%;
+}
+
+.orbit-container{
+    position:absolute;
+
+    top:20px;
+    right:50px;
+
+    width:340px;
+    height:340px;
+
+    animation:orbitSystem 30s linear infinite;
+}
+
+.orbiting-planet{
+
+    position:absolute;
+
+    top:-12px;
+    left:160px;
+
+    width:28px;
+    height:28px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #6dd5fa,
+    #2980b9,
+    #1b4f72);
+
+    box-shadow:
+    0 0 10px rgba(109,213,250,0.8),
+    0 0 20px rgba(109,213,250,0.3);
+}
+
+@keyframes orbitSystem{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
 <style>
 
 body{
