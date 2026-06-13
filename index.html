@@ -7,99 +7,63 @@
 
 <title>Dr. Soumya Sengupta</title>
 
-.space-background{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-overflow:hidden;
-z-index:-1;
-}
-
-.star{
-position:absolute;
-background:white;
-border-radius:50%;
-animation:twinkle 4s infinite;
-}
-
-@keyframes twinkle{
-0%{opacity:0.2;}
-50%{opacity:1;}
-100%{opacity:0.2;}
-}
-
-.planet{
-position:absolute;
-top:120px;
-right:100px;
-width:180px;
-height:180px;
-border-radius:50%;
-
-```
-background:
-radial-gradient(circle at 30% 30%,
-#ffcc66,
-#cc6600,
-#663300);
-
-box-shadow:0 0 50px rgba(255,150,50,0.5);
-
-animation:rotatePlanet 40s linear infinite;
-```
-
-}
-
-@keyframes rotatePlanet{
-from{transform:rotate(0deg);}
-to{transform:rotate(360deg);}
-}
-
-.moon{
-position:absolute;
-width:25px;
-height:25px;
-border-radius:50%;
-background:#dddddd;
-top:200px;
-right:250px;
-
-```
-animation:orbit 12s linear infinite;
-```
-
-}
-
-@keyframes orbit{
-from{
-transform:
-rotate(0deg)
-translateX(120px)
-rotate(0deg);
-}
-
-```
-to{
-    transform:
-    rotate(360deg)
-    translateX(120px)
-    rotate(-360deg);
-}
-```
-
-}
-
-    
 <style>
 
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#0f172a;
     color:#f8fafc;
     line-height:1.6;
+}
+
+/* Animated Background */
+
+.space-background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.star{
+    position:absolute;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+    0%{opacity:0.2;}
+    50%{opacity:1;}
+    100%{opacity:0.2;}
+}
+
+.planet{
+    position:absolute;
+    top:100px;
+    right:80px;
+    width:160px;
+    height:160px;
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle at 30% 30%,
+    #fcd34d,
+    #ea580c,
+    #7c2d12);
+
+    box-shadow:0 0 40px rgba(255,150,50,0.5);
+
+    animation:rotatePlanet 40s linear infinite;
+}
+
+@keyframes rotatePlanet{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
 }
 
 nav{
@@ -107,8 +71,6 @@ nav{
     padding:18px;
     text-align:center;
     border-bottom:3px solid #38bdf8;
-    position:sticky;
-    top:0;
 }
 
 nav a{
@@ -141,17 +103,27 @@ header{
     width:260px;
     border-radius:20px;
     border:4px solid #38bdf8;
-    box-shadow:0px 0px 20px rgba(56,189,248,0.4);
+    box-shadow:0px 0px 20px rgba(56,189,248,0.5);
 }
 
 .hero-text h1{
-    font-size:64px;
+    font-size:56px;
     margin-bottom:10px;
-    color:white;
 }
 
 .hero-text p{
-    font-size:24px;
+    font-size:22px;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 20px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    margin:5px;
 }
 
 section{
@@ -165,16 +137,10 @@ section{
     padding:30px;
     border-radius:15px;
     margin-bottom:30px;
-    box-shadow:0px 4px 12px rgba(0,0,0,0.25);
 }
 
 h2{
     color:#38bdf8;
-    font-size:34px;
-}
-
-ul{
-    font-size:20px;
 }
 
 footer{
@@ -182,7 +148,6 @@ footer{
     padding:30px;
     background:#111827;
     border-top:2px solid #38bdf8;
-    color:#cbd5e1;
 }
 
 </style>
@@ -195,32 +160,16 @@ footer{
 
 <div class="planet"></div>
 
-<div class="moon"></div>
-
-<div class="star"
-style="top:10%;left:20%;width:3px;height:3px;"></div>
-
-<div class="star"
-style="top:15%;left:70%;width:4px;height:4px;"></div>
-
-<div class="star"
-style="top:30%;left:40%;width:2px;height:2px;"></div>
-
-<div class="star"
-style="top:50%;left:10%;width:3px;height:3px;"></div>
-
-<div class="star"
-style="top:60%;left:80%;width:4px;height:4px;"></div>
-
-<div class="star"
-style="top:75%;left:30%;width:2px;height:2px;"></div>
-
-<div class="star"
-style="top:85%;left:60%;width:3px;height:3px;"></div>
+<div class="star" style="top:10%;left:20%;width:3px;height:3px;"></div>
+<div class="star" style="top:15%;left:70%;width:4px;height:4px;"></div>
+<div class="star" style="top:30%;left:40%;width:2px;height:2px;"></div>
+<div class="star" style="top:50%;left:10%;width:3px;height:3px;"></div>
+<div class="star" style="top:60%;left:80%;width:4px;height:4px;"></div>
+<div class="star" style="top:75%;left:30%;width:2px;height:2px;"></div>
+<div class="star" style="top:85%;left:60%;width:3px;height:3px;"></div>
 
 </div>
 
-    
 <nav>
 <a href="index.html">Home</a>
 <a href="research.html">Research</a>
@@ -247,41 +196,18 @@ Theoretical Astrophysics | Exoplanets | Radiative Transfer
 Postdoctoral Fellow<br>
 Open University Israel
 </p>
-<p>
-
-<div class="card">
-
-<h2>Research Profiles</h2>
 
 <p>
 
-<a href="https://github.com/soumya-go"
-target="_blank"
-style="display:inline-block;padding:12px 20px;background:#38bdf8;color:#0f172a;text-decoration:none;border-radius:8px;font-weight:bold;margin:5px;">
-💻 GitHub </a>
+<a class="button" href="Soumya_CV.pdf" target="_blank">📄 CV</a>
 
-<a href="https://orcid.org/0000-0002-7006-9439"
-target="_blank"
-style="display:inline-block;padding:12px 20px;background:#38bdf8;color:#0f172a;text-decoration:none;border-radius:8px;font-weight:bold;margin:5px;">
-🆔 ORCID </a>
+<a class="button" href="https://github.com/soumya-go" target="_blank">GitHub</a>
 
-<a href="https://scholar.google.com/citations?user=Sy5qe7gAAAAJ&hl=en&oi=ao"
-target="_blank"
-style="display:inline-block;padding:12px 20px;background:#38bdf8;color:#0f172a;text-decoration:none;border-radius:8px;font-weight:bold;margin:5px;">
-📚 Google Scholar </a>
+<a class="button" href="https://orcid.org/0000-0002-7006-9439" target="_blank">ORCID</a>
+
+<a class="button" href="https://scholar.google.com/citations?user=Sy5qe7gAAAAJ&hl=en&oi=ao" target="_blank">Scholar</a>
 
 </p>
-
-<p>
-These profiles provide access to my publications, citation record,
-research activities, and professional collaborations.
-</p>
-
-</div>
-
-
-</p>
-
 
 </div>
 
@@ -292,19 +218,17 @@ research activities, and professional collaborations.
 <section>
 
 <div class="card">
-
 <h2>About Me</h2>
 
 <p>
-Hi, I am a theoretical astrophysicist working on exoplanetary atmospheres,
-radiative transfer, atmospheric chemistry, planetary evolution and numerical simulations.
-My research focuses on Hot Jupiters, atmospheric dynamics, chemistry and radiative processes.
+I am a theoretical astrophysicist specializing in exoplanetary atmospheres,
+radiative transfer, atmospheric chemistry and planetary evolution.
+My research combines analytical and numerical modelling to investigate
+Hot Jupiters and other giant exoplanets.
 </p>
-
 </div>
 
 <div class="card">
-
 <h2>Research Interests</h2>
 
 <ul>
@@ -313,45 +237,26 @@ My research focuses on Hot Jupiters, atmospheric dynamics, chemistry and radiati
 <li>Radiative Transfer</li>
 <li>Atmospheric Retrieval</li>
 <li>Planetary Evolution</li>
-<li>Magnetic Fields in Exoplanets</li>
 <li>Numerical Simulations</li>
 </ul>
 
 </div>
 
 <div class="card">
+<h2>Research Snapshot</h2>
 
-<h2>Current Research</h2>
-
-<p>
-Studying Chemical Analysis of Hot-Jupiter Atmospheres at Open University Israel.
-</p>
+<ul>
+<li>Postdoctoral Fellow at Open University Israel</li>
+<li>Publications in ApJ, A&A and New Astronomy</li>
+<li>Expertise in atmospheric modelling and radiative transfer</li>
+<li>International conference presentations and collaborations</li>
+<li>Research on Hot Jupiters and planetary atmospheres</li>
+</ul>
 
 </div>
 
 </section>
 
-<div class="card">
-
-<h2>Research Snapshot</h2>
-
-<ul>
-
-<li>Postdoctoral Fellow at Open University Israel</li>
-
-<li>Research interests: Exoplanet Atmospheres, Radiative Transfer, Hot Jupiter Chemistry and Planetary Evolution</li>
-
-<li>Publications in The Astrophysical Journal (ApJ), Astronomy & Astrophysics (A&A), and New Astronomy</li>
-
-<li>Conference presentations across Europe, India and international exoplanet meetings</li>
-
-<li>Developer of analytical and numerical radiative transfer models for planetary atmospheres</li>
-
-</ul>
-
-</div>
-
-    
 <footer>
 
 © 2026 Dr. Soumya Sengupta
