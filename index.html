@@ -7,6 +7,91 @@
 
 <title>Dr. Soumya Sengupta</title>
 
+.space-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-1;
+}
+
+.star{
+position:absolute;
+background:white;
+border-radius:50%;
+animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:0.2;}
+50%{opacity:1;}
+100%{opacity:0.2;}
+}
+
+.planet{
+position:absolute;
+top:120px;
+right:100px;
+width:180px;
+height:180px;
+border-radius:50%;
+
+```
+background:
+radial-gradient(circle at 30% 30%,
+#ffcc66,
+#cc6600,
+#663300);
+
+box-shadow:0 0 50px rgba(255,150,50,0.5);
+
+animation:rotatePlanet 40s linear infinite;
+```
+
+}
+
+@keyframes rotatePlanet{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+.moon{
+position:absolute;
+width:25px;
+height:25px;
+border-radius:50%;
+background:#dddddd;
+top:200px;
+right:250px;
+
+```
+animation:orbit 12s linear infinite;
+```
+
+}
+
+@keyframes orbit{
+from{
+transform:
+rotate(0deg)
+translateX(120px)
+rotate(0deg);
+}
+
+```
+to{
+    transform:
+    rotate(360deg)
+    translateX(120px)
+    rotate(-360deg);
+}
+```
+
+}
+
+    
 <style>
 
 body{
